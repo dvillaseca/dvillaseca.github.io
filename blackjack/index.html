@@ -1,0 +1,84 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <title>Black Jack</title>
+    <style>
+        .card {
+            width: 83.7692307692px;
+            height: 121.6px;
+            background-image: url("Cards.png");
+            background-repeat: no-repeat;
+            transform: rotate3d(0, 1, 0, 90deg) scale(1.1);
+            -webkit-transition: all .2s;
+            -moz-transition: all .2s;
+            transition: transform .2s ease-out;
+            box-shadow: 0px 0px 0px 1px black;
+        }
+
+        .house,
+        .player {
+            display: flex;
+            max-width: 350px;
+            margin: auto;
+            background-color: #ffffff00;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .player {
+            margin: 50px auto 0 auto;
+        }
+
+        .number {
+            min-width: 10px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 200%;
+            background-color: #ffffff00;
+        }
+
+        .buttons {
+            margin: 50px auto 0 auto;
+            display: flex;
+            max-width: 350px;
+        }
+
+        .buttons>button {
+            width: calc(33% - 10px);
+            height: 50px;
+            margin: 5px;
+        }
+
+        #app {
+            position: relative;
+            max-width: 350;
+            margin: auto;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 55;
+            left: 0;
+            right: 0;
+            z-index: 10;
+            display: flex;
+            background: #FFFFFF77
+        }
+
+        .overlay>div {
+            margin: auto;
+            font-size: 350%;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app"></div>
+    <script src="app.js"></script>
+</body>
+
+</html>
